@@ -34,3 +34,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+/src/test/resources/jmeter/report/
+/src/test/resources/jmeter/jmeter.log
