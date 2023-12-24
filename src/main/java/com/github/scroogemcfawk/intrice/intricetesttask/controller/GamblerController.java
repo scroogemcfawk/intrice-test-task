@@ -27,7 +27,6 @@ public class GamblerController
     HistoryService historyService;
 
     @PostMapping("/register")
-//    @RequestMapping("")
     String register(@RequestParam String nickname) {
         try {
             gamblerService.register(nickname);
@@ -37,7 +36,6 @@ public class GamblerController
         }
     }
 
-//    @RequestMapping("/balance")
     @GetMapping("/balance")
     String getBalance(@RequestParam String nickname) {
         try {
@@ -49,7 +47,6 @@ public class GamblerController
         }
     }
 
-//    @RequestMapping("/history")
     @GetMapping("/history")
     String getHistory(@RequestParam String nickname) {
         try {
@@ -65,7 +62,6 @@ public class GamblerController
         }
     }
 
-//    @RequestMapping("/bet")
     @PostMapping("/bet")
     String bet(
             @RequestParam String nickname,
